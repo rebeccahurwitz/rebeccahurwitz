@@ -1,7 +1,7 @@
 ---
 title: Conclusion
 layout: landing
-description: 'Conclusion.'
+description: 'Conclusion'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
@@ -13,7 +13,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Sed amet aliquam</h2>
+			<h2>Conclusion 1</h2>
 		</header>
 		<p>Test 1</p>
 	</div>
