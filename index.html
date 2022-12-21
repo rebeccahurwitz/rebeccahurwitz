@@ -96,12 +96,12 @@
                 Looking at the significance of these covariates, I moved to simplify my model by eliminating variables either not of interest or not deemed significant (p-value > 0.05), including age, family size, address, guardian, parental status, travel time, free time, going out. Next, because we know that association is not causation, it was critical to analyze potential confounding variables. I used both the classical (via DAGs) and the statistical definitions (via the 10% rule) to determine that none of my variables of interest were confounding, and thus, we do not see any effect modification either. For this analysis, I started with a basic model looking at the association between study time and final grade, then created 6 linear models to assess the other covariates for confounding. Next, I then used forward selection to create 4 more models, adding in each covariate, to determine the best model based on AIC and adjusted R^2 value. 
                  <br /><br />
                 Here, I found the best model to be Model 7, which included the covariates studytime, sex, Medu, Fedu , famrel, freetime, and health to have both the highest adjusted R^2 at 0.1395 and the lowest AIC at 3276.391. Note that this is a low R^2, which is not ideal, but is the best one I got with this data.  I dug deeper by trying a quadratic model next, followed by a logistic model, neither of which had a lower AIC or higher adjusted R^2 value. Thus, of these thirteen models, Model 7, as seen below, had the strongest fit:
-                <br /><br /><img src="assets/img/IMG_1657.jpeg"  width="85%" height="85%">
+                <br /><br /><img src="assets/img/IMG_1657.jpeg"  width="55%" height="55%">
 <br /><br />
 Random Forest:
  <br /><br />
 I next built a random forest models with 10-fold cross validation to predict G3 final grades using the original covariates of interest. I minimized my node size, and to avoid overfitting, I chose 75 trees. I chose 1000 as my sampling number as my sample size was only 649. I arrived at an RMSE of 3.36698, meaning that my final predictions were on average, 3.37 grade points away from the real data.
-                    <br /><br /> <img src="assets/img/IMG_8837.jpg" width="85%" height="85%">
+                    <br /><br /> <img src="assets/img/IMG_8837.jpg" width="65%" height="65%">
                     </a>
                 </div>
             </div>
